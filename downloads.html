@@ -1,0 +1,35 @@
+---
+layout: default
+title: Storm documentation
+older:
+  - 0.7.1
+  - 0.7.0
+  - 0.6.2
+  - 0.6.1
+  - 0.6.0
+  - 0.5.4
+  - 0.5.3
+  - 0.5.2
+  - 0.5.1
+  - 0.5.0
+---
+<div id="singlepane">
+  <p>
+  Downloads for Storm are below. Instructions for how to set up a Storm cluster can be found <a href="https://github.com/nathanmarz/storm/wiki/Setting-up-a-Storm-cluster">here</a>.
+  </p>
+  <h2>Current release</h2>
+  <ul>
+  <li><a href="https://github.com/downloads/nathanmarz/storm/storm-0.7.2.zip">Storm 0.7.2</a></li>
+  </ul>
+  <h2>Latest development release</h2>
+  <ul>
+  <li><a href="https://github.com/downloads/nathanmarz/storm/storm-0.8.0-SNAPSHOT.zip">Storm 0.8.0-SNAPSHOT</a></li>
+  </ul>
+  <h2>Older releases</h2>
+  <ul>
+  {% for r in page.older %}
+<li><a href="https://github.com/downloads/nathanmarz/storm/storm-{{ r }}.zip">Storm {{ r }}</a></li>
+  {% endfor %}  
+  </ul>
+
+</div>
