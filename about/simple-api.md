@@ -2,7 +2,7 @@
 layout: about
 ---
 
-Storm has a simple and easy to use API. When programming on Storm, you manipulate and transform streams of tuples, and a tuple is a named list of values. Tuples can contains objects of any type; if you want to use a type Storm doesn't know about it's [very easy](https://github.com/nathanmarz/storm/wiki/Serialization) to register a serializer for that type.
+Storm has a simple and easy to use API. When programming on Storm, you manipulate and transform streams of tuples, and a tuple is a named list of values. Tuples can contain objects of any type; if you want to use a type Storm doesn't know about it's [very easy](https://github.com/nathanmarz/storm/wiki/Serialization) to register a serializer for that type.
 
 There are just three abstractions in Storm: spouts, bolts, and topologies. A **spout** is a source of streams in a computation. Typically a spout reads from a queueing broker such as Kestrel, RabbitMQ, or Kafka, but a spout can also generate its own stream or read from somewhere like the Twitter streaming API. Spout implementations already exist for most queueing systems.
 
