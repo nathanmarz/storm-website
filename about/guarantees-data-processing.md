@@ -6,5 +6,5 @@ Storm guarantees every tuple will be fully processed. One of Storm's core mechan
 
 Storm's basic abstractions provide an at-least-once processing guarantee, the same guarantee you get when using a queueing system. Messages are only replayed when there are failures.
 
-Using [transactional topologies](https://github.com/nathanmarz/storm/wiki/Transactional-topologies), a higher level abstraction over Storm's basic abstractions, you can achieve exactly-once processing semantics.
+Using [Trident](https://github.com/nathanmarz/storm/wiki/Trident-tutorial), a higher level abstraction over Storm's basic abstractions, you can achieve exactly-once processing semantics.
 
