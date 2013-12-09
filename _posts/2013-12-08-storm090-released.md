@@ -64,6 +64,14 @@ For most Storm topology developers, upgrading to 0.9.0 is simply a matter of upd
 
 On the devops side, when upgrading to a new Storm release, it is safest to clear any existing state (Zookeeper, `storm.local.dir`), prior to upgrading.
 
+Logging Changes
+---------------
+Another important change in 0.9.0 has to do with logging. Storm has largely switched over to the slf4j API (backed by a logback logger implementation). Some Storm dependencies rely on the log4j API, so Storm currently depends on [log4j-over-slf4j](http://www.slf4j.org/legacy.html#log4j-over-slf4j).
+
+These changes have implications for existing topologies and topology components that use the log4j API.
+
+In general, and when possible, Storm topologies and topology components should use the slf4j API for logging.
+
 
 Thanks
 ------
